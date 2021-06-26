@@ -1,0 +1,14 @@
+
+
+game.Players.PlayerAdded:Connect(function(Player)
+	Player.CharacterAdded:Connect(function(Character)
+		Character.Animate.walk.WalkAnim.AnimationId = script.WalkAnimation.AnimationId
+		Character.Animate.idle.Animation1.AnimationId = script.Idle1Animation.AnimationId
+		Character.Animate.idle.Animation2.AnimationId = script.Idle2Animation.AnimationId
+	end)
+end)
+
+
+-- Insert "Idle1Animation" as "Animation" under script
+-- Insert "Idle2Animation" as "Animation" under script
+-- Insert "WalkAnimation" as "Animation" under script
